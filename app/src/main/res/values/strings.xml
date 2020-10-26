@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MultiMegafon</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="third_fragment_label">Third Fragment</string>
+    <string name="fourth_fragment_label">Fourth Fragment</string>
+
+    <string name="radio_button_test_1">Nadawca 1</string>
+    <string name="radio_button_test_2">Nadawca 2</string>
+    <string name="radio_button_test_3">Nadawca 3</string>
+
+    <string name="chcialbym_nadawac">Chciałbym Coś Ogłosić</string>
+    <string name="chcialbym_odbierac">Chciałbym Coś Usłyszeć</string>
+    <string name="tytul_lista_urzadzen_nadajacych">Kogo chciałbyś posłuchać?</string>
+    <string name="powrot_do_wyboru">Zmień tryb</string>
+    <string name="powrot_do_wyboru_odbior">Zmień tryb</string>
+    <string name="powrot_do_wyboru_transmisja">Zmień nadawcę</string>
+    <string name="polacz">Połącz</string>
+    <string name="tytul_lista_urzadze_polaczonych">Urządzenia które cię słuchają:</string>
+    <string name="Speaker_Text_Description">Hej! Listen!</string>
+    <string name="co_chcialbys_zrobic">Co chciałbyś zrobić?</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_third_fragment">ThirdFragment</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="title_activity_fourth_fragment">FourthFragment</string>
+    <string name="todo">TODO</string>
+    <string name="wybierz_nadawce_snackbar_text">Proszę wybierz nadawcę.</string>
+    <string name="lista_urzadzen_sluchajacych">Test 1\nTest 2\nTest 3\n</string>
+</resources>
