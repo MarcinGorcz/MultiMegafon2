@@ -1,22 +1,16 @@
 package com.example.multimegafon2;
 
+import android.content.Intent;
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import android.os.Handler;
 import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.RadioButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -56,4 +50,13 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void przejdzDoNadawania(View view) {
+        Intent intent = new Intent(this, NadawanieActivity.class);
+        startActivity(intent);
+    }
+
+    public void przejdzDoOdbierania(View view) {
+        Intent intent = new Intent(this, OdbieranieWyborActivity.class);
+        startActivity(intent);
+    }
 }

@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
 
 public class MenuFragment extends Fragment {
 
@@ -17,7 +16,7 @@ public class MenuFragment extends Fragment {
             Bundle savedInstanceState
     ) {
         //To jest przypisywanie widoku do fragmentu podczas tworzenia:
-        return inflater.inflate(R.layout.fragment_first, container, false);
+        return inflater.inflate(R.layout.main_fragment, container, false);
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
@@ -26,15 +25,17 @@ public class MenuFragment extends Fragment {
         view.findViewById(R.id.przycisk_trybu_nadawania).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(MenuFragment.this).navigate(R.id.action_FirstFragment_to_secondFragment);
+                //NavHostFragment.findNavController(MenuFragment.this).navigate(R.id.action_FirstFragment_to_secondFragment);
+                ((MainActivity)getActivity()).przejdzDoNadawania(view);
             }
         });
         view.findViewById(R.id.przycisk_trybu_odbierania).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    NavHostFragment.findNavController(MenuFragment.this)
-                            .navigate(R.id.actionFirstFragmentToThirdFragment);
+                    //NavHostFragment.findNavController(MenuFragment.this).navigate(R.id.actionFirstFragmentToThirdFragment);
+                    ((MainActivity)getActivity()).przejdzDoOdbierania(view);
                 }
         });
     }
+
 }
