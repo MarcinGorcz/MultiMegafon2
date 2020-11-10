@@ -25,16 +25,40 @@ public class MenuFragment extends Fragment {
         view.findViewById(R.id.przycisk_trybu_nadawania).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //NavHostFragment.findNavController(MenuFragment.this).navigate(R.id.action_FirstFragment_to_secondFragment);
                 ((MainActivity)getActivity()).przejdzDoNadawania(view);
             }
         });
         view.findViewById(R.id.przycisk_trybu_odbierania).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    //NavHostFragment.findNavController(MenuFragment.this).navigate(R.id.actionFirstFragmentToThirdFragment);
                     ((MainActivity)getActivity()).przejdzDoOdbierania(view);
                 }
+        });
+        view.findViewById(R.id.testbutton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((MainActivity)getActivity()).przejdzDoEkranuTestowego(view);
+            }
+        });
+        view.findViewById(R.id.serverbutton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((MainActivity)getActivity()).przejdzServera(view);
+            }
+        });
+
+        view.findViewById(R.id.multiserverbutton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((MainActivity)getActivity()).przejdzServeraWieloclientowego(view);
+            }
+        });
+
+        view.findViewById(R.id.clientbutton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((MainActivity)getActivity()).przejdzClienta(view);
+            }
         });
     }
 

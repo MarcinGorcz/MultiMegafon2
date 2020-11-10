@@ -59,4 +59,22 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, OdbieranieWyborActivity.class);
         startActivity(intent);
     }
+
+    public void przejdzDoEkranuTestowego(View view) {
+        Intent intent = new Intent(this, TestWifiActivity.class);
+        startActivity(intent);
+    }
+
+    public void przejdzServera(View view) {
+        Intent intent = new Intent(this, ServerActivity.class);
+        startActivity(intent);
+    }
+    public void przejdzClienta(View view) {
+        Intent intent = new Intent(this, ClientActivity.class);
+        startActivity(intent);
+    }
+    public void przejdzServeraWieloclientowego(View view){
+        Intent intent = new Intent(this, ServerWieloclientowyActivity.class);
+        startActivity(intent);
+    }
 }
